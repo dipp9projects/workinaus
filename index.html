@@ -3,192 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MineBound | The FIFO Startup Project</title>
+    <title>MineBound | Proyecto Piloto: Minería en Australia (Visa 417)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
         .bg-startup { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); }
-        .text-gradient { background: linear-gradient(to right, #60a5fa, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .text-gradient { background: linear-gradient(to right, #f59e0b, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-300 antialiased min-h-screen">
     
     <!-- Hero Section -->
-    <header class="bg-startup border-b border-slate-800 py-16 px-6 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-full opacity-20" style="background-image: radial-gradient(#4f46e5 1px, transparent 1px); background-size: 20px 20px;"></div>
+    <header class="bg-startup border-b border-slate-800 py-20 px-6 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-20" style="background-image: radial-gradient(#f59e0b 1px, transparent 1px); background-size: 20px 20px;"></div>
         <div class="max-w-5xl mx-auto relative z-10 text-center">
-            <div class="inline-block px-3 py-1 mb-6 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-sm font-semibold tracking-wide">
-                BETA LAUNCH: JUNE 2027
+            <div class="inline-block px-3 py-1 mb-6 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 text-sm font-semibold tracking-wide">
+                PROYECTO PILOTO - VERANO 2027
             </div>
             <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
-                Project <span class="text-gradient">MineBound</span>
+                Operación <span class="text-gradient">FIFO Australia</span>
             </h1>
-            <p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-8 font-light">
-                Hackeando el acceso al sector minero australiano. Un MVP ejecutado por 2 Co-Founders desde Noruega, escalable para toda la comunidad hispano-europea.
+            <p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                El mapa real, sin humo ni estafas, para acceder al sector minero australiano. Ejecutado por dos hermanos italo-venezolanos desde Noruega (Visa 417).
             </p>
             
             <!-- Overall Progress -->
-            <div class="max-w-md mx-auto bg-slate-800/50 rounded-xl p-6 border border-slate-700">
-                <div class="flex justify-between text-sm font-semibold text-white mb-2">
-                    <span>Progreso del MVP</span>
-                    <span id="progress-text text-indigo-400">0%</span>
+            <div class="max-w-md mx-auto bg-slate-800/80 rounded-2xl p-6 border border-slate-700 shadow-2xl backdrop-blur-md">
+                <div class="flex justify-between text-sm font-bold text-white mb-3">
+                    <span>Progreso Total del Proyecto</span>
+                    <span id="progress-text" class="text-amber-400">0%</span>
                 </div>
-                <div class="w-full bg-slate-900 rounded-full h-3 border border-slate-700">
-                    <div id="progress-bar" class="bg-gradient-to-r from-blue-500 to-purple-500 h-3 rounded-full" style="width: 0%; transition: width 0.5s ease-in-out;"></div>
+                <div class="w-full bg-slate-900 rounded-full h-4 border border-slate-700 overflow-hidden">
+                    <div id="progress-bar" class="bg-gradient-to-r from-amber-500 to-red-500 h-4 rounded-full" style="width: 0%; transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);"></div>
                 </div>
             </div>
         </div>
     </header>
     
-    <main class="max-w-5xl mx-auto py-12 px-6">
+    <main class="max-w-5xl mx-auto py-16 px-6">
         
-        <!-- KPIs Section -->
+        <!-- Requisitos Visa 417 -->
         <section class="mb-16">
-            <h2 class="text-xl font-bold text-white mb-6 uppercase tracking-wider flex items-center">
-                <svg class="w-6 h-6 mr-2 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-                Core KPIs (Métricas Clave)
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-center border-b border-slate-800 pb-4">
+                <svg class="w-8 h-8 mr-3 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                La Ventaja: Working Holiday Visa (Subclase 417)
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="glass-card rounded-2xl p-6">
-                    <div class="text-slate-400 text-sm font-semibold uppercase">Capital Inicial (Runway)</div>
-                    <div class="text-3xl font-bold text-white mt-2">$5,000 AUD</div>
-                    <div class="text-xs text-emerald-400 mt-1">✓ Requisito Legal 417</div>
+            <div class="glass-card rounded-2xl p-8 grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">¿Por qué es la mejor vía?</h3>
+                    <p class="text-slate-400 mb-4 leading-relaxed">Tener pasaporte italiano os otorga acceso a la visa 417, la ruta más rápida y con menos barreras burocráticas para entrar a trabajar a Australia.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> <span class="text-slate-300"><strong>Límite de edad ampliado:</strong> Hasta los 35 años (incluidos).</span></li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> <span class="text-slate-300"><strong>Sin examen de inglés:</strong> No piden ni IELTS ni PTE.</span></li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> <span class="text-slate-300"><strong>Sin requisitos académicos:</strong> No hace falta título universitario.</span></li>
+                    </ul>
                 </div>
-                <div class="glass-card rounded-2xl p-6">
-                    <div class="text-slate-400 text-sm font-semibold uppercase">Time-to-Hire Target</div>
-                    <div class="text-3xl font-bold text-white mt-2">< 14 Días</div>
-                    <div class="text-xs text-blue-400 mt-1">Desde el aterrizaje en Perth</div>
-                </div>
-                <div class="glass-card rounded-2xl p-6">
-                    <div class="text-slate-400 text-sm font-semibold uppercase">Target Ahorro (Por Cohorte)</div>
-                    <div class="text-3xl font-bold text-white mt-2">+$3,000 AUD/mes</div>
-                    <div class="text-xs text-purple-400 mt-1">Neto tras impuestos (Rol FIFO)</div>
+                <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700">
+                    <h3 class="text-lg font-bold text-amber-400 mb-4">Requisitos Obligatorios</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <div class="text-white font-semibold">Fondos Demostrables</div>
+                            <div class="text-sm text-slate-400">$5,000 AUD (~3,100 €) líquidos en vuestra cuenta en el momento de la solicitud.</div>
+                        </li>
+                        <li>
+                            <div class="text-white font-semibold">Pasaporte Italiano</div>
+                            <div class="text-sm text-slate-400">Debe tener una validez superior a la duración del viaje (recomendable hasta finales de 2028).</div>
+                        </li>
+                        <li>
+                            <div class="text-white font-semibold">Tasa Gubernamental</div>
+                            <div class="text-sm text-slate-400">$635 AUD (aprox. 390 €) que se pagan al enviar la solicitud online.</div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Roadmap / Checklist -->
-        <div class="space-y-8">
-            
-            <!-- Phase 1: Pre-Launch -->
+        <!-- Tracker / Checklist -->
+        <section class="space-y-8 mb-16">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-center border-b border-slate-800 pb-4">
+                <svg class="w-8 h-8 mr-3 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                Master Checklist (Ejecución y Control)
+            </h2>
+
+            <!-- FASE 1 -->
             <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl">
-                <div class="bg-slate-700/50 px-6 py-4 border-b border-slate-700 flex justify-between items-center">
-                    <h3 class="text-lg font-bold text-white">Q1. Pre-Launch (Capital & Visa)</h3>
-                    <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">Hasta Mar 2027</span>
+                <div class="bg-slate-700/80 px-6 py-4 border-b border-slate-600 flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-white">1. Trámites Previos (Desde Noruega)</h3>
+                    <span class="text-xs font-bold bg-amber-500/20 text-amber-400 px-3 py-1 rounded-full border border-amber-500/30">ANTES DE VOLAR</span>
                 </div>
-                <div class="p-6">
+                <div class="p-0">
                     <table class="w-full text-left border-collapse">
                         <thead>
-                            <tr class="text-xs text-slate-400 uppercase tracking-wider">
-                                <th class="pb-3 w-2/3">Milestone</th>
-                                <th class="pb-3 text-center w-1/6">C-F 1</th>
-                                <th class="pb-3 text-center w-1/6">C-F 2</th>
+                            <tr class="text-xs text-slate-400 uppercase tracking-wider bg-slate-800/50">
+                                <th class="p-4 w-2/3 border-b border-slate-700">Acción</th>
+                                <th class="p-4 text-center w-1/6 border-b border-slate-700 border-l border-slate-700">SBP</th>
+                                <th class="p-4 text-center w-1/6 border-b border-slate-700 border-l border-slate-700">OBP</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="border-t border-slate-700/50">
-                                <td class="py-3 pr-4"><strong>Auditoría Legal:</strong> Pasaportes italianos válidos > 2028.</td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s1-1"></td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s1-2"></td>
+                            <tr class="border-b border-slate-700/50 hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Ahorro Mínimo Viable</div>
+                                    <div class="text-sm text-slate-400">Conseguir el equivalente a $5,000 AUD (~3,100 €) en la cuenta bancaria de cada uno.</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f1-1-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f1-1-obp"></td>
                             </tr>
-                            <tr class="border-t border-slate-700/50">
-                                <td class="py-3 pr-4"><strong>Funding Asegurado:</strong> Extractos bancarios con $5k AUD listos.</td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s1-3"></td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s1-4"></td>
+                            <tr class="border-b border-slate-700/50 hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Certificado Bancario (Inglés)</div>
+                                    <div class="text-sm text-slate-400">Pedir al banco un extracto o carta que demuestre los fondos. Fundamental para la visa.</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f1-2-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f1-2-obp"></td>
                             </tr>
-                            <tr class="border-t border-slate-700/50">
-                                <td class="py-3 pr-4"><strong>Permiso Migratorio:</strong> Visa 417 aprobada vía ImmiAccount.</td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s1-5"></td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s1-6"></td>
+                            <tr class="border-b border-slate-700/50 hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Solicitud Working Holiday 417</div>
+                                    <div class="text-sm text-slate-400">Crear cuenta en <em>immi.homeaffairs.gov.au</em>, adjuntar pasaporte y fondos, y pagar la tasa.</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f1-3-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f1-3-obp"></td>
+                            </tr>
+                            <tr class="border-b border-slate-700/50 hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Vuelos a Perth (WA)</div>
+                                    <div class="text-sm text-slate-400">Comprar billetes a la capital minera <strong>solo después</strong> de recibir el email "Visa Grant Notification".</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f1-4-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f1-4-obp"></td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Alojamiento Inicial</div>
+                                    <div class="text-sm text-slate-400">Reservar un Hostel o Airbnb en Perth para las primeras 2-3 semanas (fase de papeleo).</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f1-5-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f1-5-obp"></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- Phase 2: Go-To-Market -->
-            <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl">
-                <div class="bg-slate-700/50 px-6 py-4 border-b border-slate-700 flex justify-between items-center">
-                    <h3 class="text-lg font-bold text-white">Q2. Go-To-Market (Marca Personal)</h3>
-                    <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">Abr - May 2027</span>
+            <!-- FASE 2 -->
+            <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl mt-8">
+                <div class="bg-slate-700/80 px-6 py-4 border-b border-slate-600 flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-white">2. Logística de Aterrizaje (Días 1 a 5)</h3>
+                    <span class="text-xs font-bold bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full border border-blue-500/30">EN PERTH</span>
                 </div>
-                <div class="p-6">
+                <div class="p-0">
                     <table class="w-full text-left border-collapse">
                         <thead>
-                            <tr class="text-xs text-slate-400 uppercase tracking-wider">
-                                <th class="pb-3 w-2/3">Milestone</th>
-                                <th class="pb-3 text-center w-1/6">C-F 1</th>
-                                <th class="pb-3 text-center w-1/6">C-F 2</th>
+                            <tr class="text-xs text-slate-400 uppercase tracking-wider bg-slate-800/50">
+                                <th class="p-4 w-2/3 border-b border-slate-700">Acción</th>
+                                <th class="p-4 text-center w-1/6 border-b border-slate-700 border-l border-slate-700">SBP</th>
+                                <th class="p-4 text-center w-1/6 border-b border-slate-700 border-l border-slate-700">OBP</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="border-t border-slate-700/50">
-                                <td class="py-3 pr-4"><strong>Assets Digitales:</strong> CV Australiano Lean (Sin foto, foco en resistencia física).</td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s2-1"></td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s2-2"></td>
+                            <tr class="border-b border-slate-700/50 hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Día 1: SIM y Banco</div>
+                                    <div class="text-sm text-slate-400">Comprar SIM (Telstra u Optus por cobertura). Abrir cuenta en CommBank/NAB con pasaporte.</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f2-1-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f2-1-obp"></td>
                             </tr>
-                            <tr class="border-t border-slate-700/50">
-                                <td class="py-3 pr-4"><strong>Canal de Adquisición:</strong> Perfil en SEEK.com.au activo + Alertas "Entry Level FIFO".</td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s2-3"></td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s2-4"></td>
+                            <tr class="border-b border-slate-700/50 hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Día 1: TFN (Tax File Number)</div>
+                                    <div class="text-sm text-slate-400">Solicitar online en la web de la ATO el número de impuestos (imprescindible para trabajar).</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f2-2-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f2-2-obp"></td>
+                            </tr>
+                            <tr class="border-b border-slate-700/50 hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Día 2: Superannuation</div>
+                                    <div class="text-sm text-slate-400">Abrir fondo de pensiones obligatorio (ej. AustralianSuper). El jefe os pagará ahí un 11.5% extra.</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f2-3-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f2-3-obp"></td>
+                            </tr>
+                            <tr class="border-b border-slate-700/50 hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Día 3: Curso White Card</div>
+                                    <div class="text-sm text-slate-400">Curso presencial de medio día sobre seguridad. <strong>Sin esto es ilegal pisar una mina.</strong> ~$100 AUD.</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f2-4-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f2-4-obp"></td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Día 4: Police Clearance (NPC)</div>
+                                    <div class="text-sm text-slate-400">Solicitar antecedentes penales australianos online (Australian Federal Police). ~$50 AUD.</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f2-5-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f2-5-obp"></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- Phase 3: Deployment -->
-            <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl">
-                <div class="bg-slate-700/50 px-6 py-4 border-b border-slate-700 flex justify-between items-center">
-                    <h3 class="text-lg font-bold text-white">Q3. Deployment (Infraestructura Local)</h3>
-                    <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">Jun - Jul 2027</span>
+            <!-- FASE 3 -->
+            <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl mt-8">
+                <div class="bg-slate-700/80 px-6 py-4 border-b border-slate-600 flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-white">3. Búsqueda de Empleo Minero (Semana 2+)</h3>
+                    <span class="text-xs font-bold bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full border border-emerald-500/30">EL ATAQUE</span>
                 </div>
-                <div class="p-6">
+                <div class="p-0">
                     <table class="w-full text-left border-collapse">
                         <thead>
-                            <tr class="text-xs text-slate-400 uppercase tracking-wider">
-                                <th class="pb-3 w-2/3">Milestone</th>
-                                <th class="pb-3 text-center w-1/6">C-F 1</th>
-                                <th class="pb-3 text-center w-1/6">C-F 2</th>
+                            <tr class="text-xs text-slate-400 uppercase tracking-wider bg-slate-800/50">
+                                <th class="p-4 w-2/3 border-b border-slate-700">Acción</th>
+                                <th class="p-4 text-center w-1/6 border-b border-slate-700 border-l border-slate-700">SBP</th>
+                                <th class="p-4 text-center w-1/6 border-b border-slate-700 border-l border-slate-700">OBP</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="border-t border-slate-700/50">
-                                <td class="py-3 pr-4"><strong>Setup Legal y Financiero:</strong> SIM Card, Bank Account, TFN y Superannuation (Día 1-2).</td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s3-1"></td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s3-2"></td>
+                            <tr class="border-b border-slate-700/50 hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Adaptación del CV a formato Australiano</div>
+                                    <div class="text-sm text-slate-400">Sin foto, sin fecha nacimiento. Destacar resistencia física y disponibilidad inmediata (417 Visa). Añadir teléfono AU.</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f3-1-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f3-1-obp"></td>
                             </tr>
-                            <tr class="border-t border-slate-700/50">
-                                <td class="py-3 pr-4"><strong>Licencias Operativas:</strong> White Card y National Police Clearance (NPC) obtenidos.</td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s3-3"></td>
-                                <td class="py-3 text-center"><input type="checkbox" class="w-5 h-5 accent-indigo-500 rounded save-cb" data-id="s3-4"></td>
+                            <tr class="border-b border-slate-700/50 hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Alta en Plataformas Clave</div>
+                                    <div class="text-sm text-slate-400">Crear perfil en SEEK.com.au (Alertas: "Entry Level FIFO") y actualizar LinkedIn a ubicación Perth.</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f3-2-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f3-2-obp"></td>
+                            </tr>
+                            <tr class="border-b border-slate-700/50 hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Ataque Directo a Empresas de Campamentos</div>
+                                    <div class="text-sm text-slate-400">Aplicar online a <strong>Sodexo, Compass Group y Cater Care</strong> para puestos de Utility, Limpieza o Cocina.</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f3-3-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f3-3-obp"></td>
+                            </tr>
+                            <tr class="border-b border-slate-700/50 hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Ronda de Recruiters en Perth</div>
+                                    <div class="text-sm text-slate-400">Presentarse físicamente (bien vestidos) en agencias: <strong>WorkPac, Hays, Techforce</strong>. "We are ready to fly".</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f3-4-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f3-4-obp"></td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="p-4">
+                                    <div class="font-bold text-white mb-1">Pre-Employment Medical & D&A Test</div>
+                                    <div class="text-sm text-slate-400">Superar el examen médico exhaustivo y el <strong>estricto test de drogas y alcohol</strong> (Tolerancia Cero).</div>
+                                </td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f3-5-sbp"></td>
+                                <td class="p-4 text-center border-l border-slate-700"><input type="checkbox" class="w-6 h-6 accent-amber-500 rounded save-cb cursor-pointer" data-id="f3-5-obp"></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            
-            <!-- Phase 4: Acquisition -->
-            <div class="glass-card rounded-2xl overflow-hidden shadow-xl mt-8">
-                <div class="bg-indigo-900/40 px-6 py-4 border-b border-indigo-500/30">
-                    <h3 class="text-lg font-bold text-white">Q4. Acquisition & Scaling (La Venta del MVP)</h3>
+
+        </section>
+
+        <!-- Información Crítica Adicional -->
+        <section>
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                <svg class="w-6 h-6 mr-3 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Realidad del Sector (Lo que debes saber)
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-slate-800 rounded-xl p-6 border border-slate-700 shadow-md">
+                    <h4 class="font-bold text-white mb-2 text-lg">¿Qué es el Roster FIFO?</h4>
+                    <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                        Fly-In Fly-Out. La empresa paga tus vuelos desde Perth a la mina. Vives en un campamento allí con alojamiento y comida pagados. Normalmente trabajarás ciclos duros (ej. 14 días seguidos de trabajo de 12 horas, seguidos de 7 días libres en Perth).
+                    </p>
+                    <div class="bg-slate-900 rounded p-3 text-sm text-emerald-400 font-semibold border border-slate-700">
+                        Ahorro estimado (Entry-Level): ~$3,000 - $4,000 AUD limpios al mes.
+                    </div>
                 </div>
-                <div class="p-6 space-y-4">
-                    <p class="text-sm text-slate-300"><strong>Target de Venta (Posiciones):</strong> Utility Worker, Mine Site Cleaner, Kitchen Hand, Trade Assistant.</p>
-                    <p class="text-sm text-slate-300"><strong>Partnerships B2B (Donde aplicar):</strong> Sodexo, Compass Group (ESS), Cater Care.</p>
-                    <p class="text-sm text-slate-300"><strong>Growth Hack (Agencias):</strong> Presentación física en WorkPac, Hays y Techforce en Perth. El <em>elevator pitch</em>: "Visa 417 ready, White Card ready, ready to fly tomorrow."</p>
-                    <div class="mt-4 p-4 bg-slate-900/50 rounded-lg border border-slate-700">
-                        <h4 class="text-emerald-400 font-bold text-sm uppercase mb-2">Escalabilidad (Para el futuro)</h4>
-                        <p class="text-xs text-slate-400">Documentar iteraciones del CV, registrar preguntas de entrevistas en el "Pre-Employment Medical" y trazar los costes reales para crear el <em>playbook</em> de futuros usuarios.</p>
+                <div class="bg-slate-800 rounded-xl p-6 border border-slate-700 shadow-md">
+                    <h4 class="font-bold text-white mb-2 text-lg">La Estrategia de Entrada</h4>
+                    <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                        Nadie entra de primeras conduciendo un camión gigante. Entraréis como <em>Utilities</em> (limpieza, cocina, campamento) o <em>General Labourers / Trade Assistants</em> (trabajo manual físico apoyando a mecánicos).
+                    </p>
+                    <div class="bg-slate-900 rounded p-3 text-sm text-amber-400 font-semibold border border-slate-700">
+                        El truco: Estando dentro, haced "networking" para ascender a roles operativos a los 3-6 meses.
                     </div>
                 </div>
             </div>
-
-        </div>
+        </section>
+        
     </main>
     
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-8 text-center text-sm text-slate-500">
+        <p>Desarrollado para el Proyecto Piloto MineBound • SBP & OBP • 2027</p>
+    </footer>
+
     <script>
         const checkboxes = document.querySelectorAll('.save-cb');
         const progressBar = document.getElementById('progress-bar');
@@ -205,16 +323,18 @@
 
         checkboxes.forEach(cb => {
             const id = cb.getAttribute('data-id');
+            // Load state from local storage
             if (localStorage.getItem(id) === 'true') {
                 cb.checked = true;
             }
+            // Add listener to save on click
             cb.addEventListener('change', () => {
                 localStorage.setItem(id, cb.checked);
                 updateProgress();
             });
         });
         
-        // Initialize progress on load
+        // Initial run
         updateProgress();
     </script>
 </body>
